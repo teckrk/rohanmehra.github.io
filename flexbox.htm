@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+
+
+        }
+
+        body {
+            font-family: 'Baloo Bhaijaan 2', cursive;
+        }
+
+        .header {
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('images/lighthouse1900-.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            /* height: 80px; */
+            /* width: 100%; */
+            background-color: unset;
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+            /* flex-flow: row-reverse wrap; for two above properties  */
+            /* justify-content: space-between; */
+            justify-content: center;
+            /* justify-content: ; */
+            align-items: center;
+            /* position: fixed; */
+        }
+
+        .item {
+            color: aliceblue;
+            width: 3rem;
+            height: 0.6rem;
+            /* background-color: rgb(255 99 71); */
+            /* border-bottom: 3px solid rgb(255 0 0); */
+            /* border-radius: 18px; */
+            margin: 10px;
+            padding: 10px 15px;
+        }
+
+        #logo {
+            margin-left: -345px;
+            margin-right: 260px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+            font-weight: bolder;
+        }
+
+        .logo {
+            display: flex;
+            /* background-color: rgb(255 235 205);
+            border: 2px solid rgb(0 0 0);
+            height: 44px;
+            width: 77px;
+            padding: 6px;
+            padding-top: 24px;
+            border-radius: 40px */
+        }
+
+        .logo img {
+            height: 5rem;
+            width: 5rem;
+            margin-top: 0.93rem;
+        }
+
+        .logo p {
+            margin-top: 27px;
+            color: rgb(196 197 166);
+        }
+
+        #btn {
+            height: 20px;
+            width: 62px;
+            margin-left: 180px;
+            margin-right: -159px;
+            background-color: rgb(255 99 71);
+            border: 0px solid rgb(0 0 255);
+            border-radius: 38px;
+        }
+
+        #btn2 {
+            height: 20px;
+            width: 62px;
+            margin-left: 180px;
+            margin-right: -310px;
+            background-color: tomato;
+            border: 0px solid blue;
+            border-radius: 38px;
+        }
+
+        .line1 {
+            border: 0px solid rgb(255 255 255);
+            border-radius: 30px;
+            margin-left: 51px;
+            margin-top: 110px;
+            margin-right: 900px;
+            padding: 20px
+        }
+
+        #hh1 {
+            font-size: 27px;
+            color: azure;
+        }
+
+        #hh2 {
+            font-size: 75px;
+            color: rgb(100 42 42);
+        }
+
+        #name {
+            color: rgb(0 67 125);
+        }
+
+        .section {
+            color: rgb(36, 62, 85);
+            background-color: rgb(0 255 255);
+        }
+
+        .hhead {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* --------------------- FOOTER -----------------------------*/
+
+        #footer p {
+            text-align: center;
+            background-color: rgb(75, 75, 75);
+        }
+
+        .social {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 10px 10px;
+            /* border: 1px solid blue;  */
+            right: 0px;
+            bottom: 0px;
+            text-align: center;
+            background-color: rgb(75, 75, 75);
+        }
+
+
+        /* ------------------------------MEDIA QUERIES --------------------------*/
+
+        @media (max-width:1300px) and (min-width:900px) {
+            .container {
+                /* height: 80px; */
+                /* width: 100%; */
+                background-color: unset;
+                display: flex;
+                flex-direction: row;
+                /* flex-direction: row-reverse; */
+                flex-wrap: nowrap;
+                /* flex-wrap: wrap-reverse; */
+                /* flex-flow: row-reverse wrap; for two above properties  */
+                /* justify-content: space-between; */
+                justify-content: center;
+                /* justify-content: ; */
+                align-items: center;
+                /* position: fixed; */
+            }
+
+            .item {
+                color: rgb(212, 255, 40);
+                width: 3rem;
+                height: 0.6rem;
+                /* background-color: rgb(255 99 71); */
+                /* border-bottom: 3px solid rgb(255 0 0); */
+                /* border-radius: 18px; */
+                margin: 10px;
+                padding: 10px 15px;
+            }
+
+            #logo {
+                margin-left: 0px;
+                margin-right: 30px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: large;
+                font-weight: bolder;
+            }
+
+            .logo img {
+                height: 80px;
+                width: 80px;
+                margin-top: 15px;
+            }
+
+            .logo p {
+                margin-top: 27px;
+                color: rgb(196 197 166);
+            }
+
+            #btn {
+                height: 20px;
+                width: 62px;
+                margin-left: 0px;
+                margin-right: 0px;
+                background-color: rgb(255 99 71);
+                border: 0px solid rgb(0 0 255);
+                border-radius: 38px;
+            }
+
+            #btn2 {
+                height: 20px;
+                width: 62px;
+                margin-left: 0px;
+                margin-right: 0px;
+                background-color: tomato;
+                border: 0px solid blue;
+                border-radius: 38px;
+            }
+
+
+            .line1 {
+                border: 0px solid rgb(255 255 255);
+                margin-left: 53px;
+                margin-top: 35px;
+                margin-right: 0px;
+                padding: 10px;
+            }
+
+            #hh1 {
+                font-size: 27px;
+                color: azure;
+            }
+
+            #hh2 {
+                font-size: 75px;
+                color: rgb(100 42 42);
+            }
+
+            #name {
+                color: rgb(0 67 125);
+            }
+
+
+
+
+
+        }
+
+        /* ----------------------media 900-0---------------------- */
+        @media (max-width:900px) and (min-width:0px) {
+
+            .header {
+                height: 45rem;
+                width: 100%;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('images/lighthouse1900-.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .container {
+                /* height: 80px; */
+                /* width: 100%; */
+                background-color: unset;
+                display: flex;
+                flex-direction: column;
+                /* flex-direction: row-reverse; */
+                flex-wrap: nowrap;
+                /* flex-wrap: wrap-reverse; */
+                /* flex-flow: row-reverse wrap; for two above properties  */
+                /* justify-content: space-between; */
+                justify-content: center;
+                /* justify-content: ; */
+                align-items: center;
+                /* position: fixed; */
+            }
+
+
+            .item {
+                color: rgb(212, 255, 40);
+                width: 3rem;
+                height: 0.6rem;
+                /* background-color: rgb(255 99 71); */
+                /* border-bottom: 3px solid rgb(255 0 0); */
+                /* border-radius: 18px; */
+                margin: 10px;
+                padding: 10px 15px;
+                cursor: pointer;
+            }
+
+            #logo {
+                margin-left: 0px;
+                margin-right: 30px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: large;
+                font-weight: bolder;
+            }
+
+            .logo img {
+                height: 80px;
+                width: 80px;
+                margin-top: 15px;
+            }
+
+            .logo p {
+                margin-top: 27px;
+                color: rgb(196 197 166);
+            }
+
+            #btn {
+                height: 20px;
+                width: 62px;
+                margin-left: 0px;
+                margin-right: 0px;
+                background-color: rgb(255 99 71);
+                border: 0px solid rgb(0 0 255);
+                border-radius: 38px;
+            }
+
+            #btn2 {
+                height: 20px;
+                width: 62px;
+                margin-left: 0px;
+                margin-right: 0px;
+                background-color: tomato;
+                border: 0px solid blue;
+                border-radius: 38px;
+            }
+
+
+            .line1 {
+                border: 0px solid rgb(255 255 255);
+                margin-left: 0px;
+                margin-top: 0px;
+                margin-right: 0px;
+                padding: 1.5rem;
+            }
+
+            #hh1 {
+                font-size: 1.2rem;
+                color: azure;
+            }
+
+            #hh2 {
+                font-size: 2.5rem;
+                color: rgb(100 42 42);
+            }
+
+            #name {
+                color: rgb(0 67 125);
+            }
+
+            .section {
+                color: rgb(36, 62, 85);
+                background-color: rgb(0 255 255);
+                padding: 0.8rem;
+            }
+
+            .hhead {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding: 2.5rem;
+            }
+        }
+
+        /*------------------- UTILITIES CLASSES --------------------------*/
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo" id="logo"><img src="logos/skull.png">
+                <p> ROHAN<br>MEHRA</p>
+            </div>
+            <div class="item" id="item-1">HOME</div>
+            <div class="item" id="item-2">PROFILE</div>
+            <div class="item" id="item-3">BLOG</div>
+            <div class="item" id="item-4">ABOUT</div>
+            <div class="item" id="item-5">CONTACT</div>
+            <div class="item" id="btn"> SIGN IN</div>
+            <div class="item" id="btn2"> SIGN UP</div>
+        </div>
+        <div class="line1">
+            <h1 id="hh1"> LET'S BUILD SOMETHING AMAZING TOGETHER.</h1>
+            <h1 id="hh2">WEB DESIGNER</h1>
+            <P id="name">ROHAN MEHRA</P>
+
+        </div>
+    </header>
+    <hr style="color: rgb(64, 0, 255);">
+    <div class="section">
+        <div class="hhead">
+            <h1>Hello ! welcome to world of web </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, tenetur nam, nesciunt fuga quibusdam et,
+                necessitatibus unde perferend
+                recusandae, officiis praesentium ea sequi enim placeat ex exercitationem quod deleniti, voluptatum
+                fugiat. Cumque ipsum, illo distinctio quisquam velit tempore cum corrupti expedita quidem nostrum
+                dolorum optio autem delectus obcaecati aspernatur provident omnis! Odit, sequi reiciendis deleniti
+                impedit soluta perferendis labore repreh
+                alias. Consectetur harum obcaecati quis, optio sequi nihil corporis vel rerum, minima, laudantium
+                aliquid accusantium e
+                cum ipsa optio tenetur cumque, beatae mo
+                necessitatibus fuga tenetur quae veniam, quasi expedita debitis voluptatum harum laudantium est. Dolorum
+                fugiat ipsum nam vel perferendis dolor perspiciatis fuga eveniet consequatur voluptas reprehenderit
+                quae, officia atque ullam eum quia, debitis voluptate. Inventore in libero, fugiat autem numquam non,
+                voluptates obcaecati quas, reiciendis excepturi ipsa. Asperiores aut, sint quidem et dolorem, sapiente
+                ea debitis ipsa quisquam modi, similique architecto odit? Veritatis accusamus quidem laboriosam fuga?
+                Delectus vero repudiandae enim placeat tempora laudantium ab eligendi rem molestiae tempore laboriosam
+                soluta facilis corporis ratione fuga, ad perspiciatis dolor corrupti inventore amet officia reiciendis.
+                Perferendis, non quam itaque quo earum eos!</p>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="social">
+            <a href="#"><img src="logos/icons8-facebook-24.png" alt=""></a>
+            <a href="#"><img src="logos/icons8-instagram-24.png" alt=""></a>
+            <a href="#"><img src="logos/icons8-whatsapp-24.png" alt=""></a>
+            <a href="#"><img src="logos/icons8-twitter-24.png" alt=""></a>
+        </div>
+        <p>All copyrights are reserved ! </p>
+        <p> Rohan Mehra</p>
+    </footer>
+
+</body>
+
+</html>
